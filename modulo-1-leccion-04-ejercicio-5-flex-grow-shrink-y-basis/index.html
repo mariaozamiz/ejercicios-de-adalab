@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      header {
+        background-color: lightgray;
+        width: auto;
+        height: 10vh;
+      }
+      main {
+        background-color: grey;
+        width: auto;
+        min-height: 60vh;
+        flex-grow: inherit;
+      }
+      footer {
+        background-color: orange;
+        width: auto;
+        height: 10vh;
+      }
+      p {
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        header
+      </header>
+      <main>
+        main
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam
+          dolore officiis iure nisi libero, fugiat eum ipsum laboriosam illum.
+          Natus nulla officiis repudiandae amet quod facilis voluptatem
+          obcaecati ab?
+        </p>
+      </main>
+      <footer>
+        footer
+      </footer>
+    </div>
+  </body>
+</html>
