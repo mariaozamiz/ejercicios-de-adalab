@@ -1,0 +1,32 @@
+.header {
+    background-color: lightgrey;
+}
+.menu {
+    background-color: lime;
+    list-style-type: none;
+    padding: 0px;
+}
+.main {
+    background-color: yellow;
+}
+.footer {
+    background-color: lightgrey;
+}
+section {
+    background-color: grey;
+}
+.wrapper {
+    border: 1px solid blue;
+    width: 100%;
+}
+.wrapper h1 {
+    margin-top: 0px;
+}
+
+@media all and (min-width:480px) {
+
+}
+
+@media all and (min-width:1000px) {
+
+}
