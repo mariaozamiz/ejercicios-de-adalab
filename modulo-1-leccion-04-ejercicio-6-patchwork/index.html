@@ -1,46 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .header {
-            background-color: orangered;
-        }
-        .aside-1 {
-            background-color: yellow;
-        }
-        .content {
-            background-color: lightblue;
-        }
-        .aside-2 {
-            background-color: palevioletred;
-        }
-        .footer {
-            background-color: greenyellow;
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <h1>Header</h1>
-    </header>
-    <main class="main">
-        <aside class="aside-1">
-            <h1>Aside 1</h1>
-        </aside>
-        <div class="content">
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quis nihil tempora mollitia earum asperiores obcaecati eligendi, repellendus dolores. Accusamus libero dolorem, culpa et molestias aliquid temporibus. Quaerat, eveniet numquam.
-            </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheets" href="reset.css" />
+        <title>Document</title>
+        <style>
+
+            * {
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .body {
+                max-width: 960px;
+                width: 100vw;
+                margin: 0;
+            }
+            .header {
+                background-color: orangered;
+                width: 100%;
+                
+            }
+            .aside-1 {
+                background-color: yellow;
+                width: 25%;
+                display: inline-block;
+            }
+            .article {
+                background-color: blue;
+                width: 50%;
+                display: inline-block;
+            }
+            .aside-2 {
+                background-color: palevioletred;
+                width: 25%;
+                display: inline-block;
+            }
+            .footer {
+                background-color: greenyellow;
+                width: 100%;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .main {
+                display: flex;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body class="body">
+        <div class="container">
+            <header class="header">
+                <h1>Header</h1>
+            </header>
+            <main class="main">
+                <aside class="aside-1">
+                    <h2>Aside 1</h2>
+                </aside>
+                <article class="article">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deserunt quis nihil tempora mollitia earum asperiores
+                        obcaecati eligendi, repellendus dolores. Accusamus
+                        libero dolorem, culpa et molestias aliquid temporibus.
+                        Quaerat, eveniet numquam.
+                    </p>
+                </article>
+                <aside class="aside-2">
+                    <h2>Aside 2</h2>
+                </aside>
+            </main>
+            <footer class="footer">
+                <h2>Footer</h2>
+            </footer>
         </div>
-        <aside class="aside-2">
-            <h1>Aside 2</h1>
-        </aside>
-    </main>
-    <footer class="footer">
-        <h1>Footer</h1>
-    </footer>
-</body>
+    </body>
 </html>

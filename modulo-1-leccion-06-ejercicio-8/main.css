@@ -1,32 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightgrey;
+}
 .header {
     background-color: lightgrey;
+    width: 100%;
 }
 .menu {
     background-color: lime;
     list-style-type: none;
     padding: 0px;
 }
-.main {
+.article {
     background-color: yellow;
 }
-.footer {
+.image {
+    background-color: orange;
+    width: 250px;
+    height: 200px;
+    display: none;
+}
+.main {
     background-color: lightgrey;
 }
-section {
+.aside {
     background-color: grey;
-}
-.wrapper {
-    border: 1px solid blue;
-    width: 100%;
-}
-.wrapper h1 {
-    margin-top: 0px;
+    margin: 16px 0;
 }
 
-@media all and (min-width:480px) {
-
+@media all and (min-width: 480px) {
+    .container {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
-@media all and (min-width:1000px) {
-
+@media all and (min-width: 1000px) {
 }
