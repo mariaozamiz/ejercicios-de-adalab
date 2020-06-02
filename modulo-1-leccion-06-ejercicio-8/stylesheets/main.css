@@ -30,18 +30,48 @@
     height: 200px;
     display: none;
 }
-.main {
-    background-color: lightgrey;
-}
 .aside {
     background-color: grey;
     margin: 16px 0;
 }
 
 @media all and (min-width: 480px) {
-    .container {
-        flex-direction: row;
-        justify-content: flex-start;
+
+    .nav-and-main-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .container .menu {
+     
+    }
+    .main {
+     margin: 0px 20px;
+     width: 70%
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article h1 {
+       
+    }
+
+    .article p {
+        
+    }
+
+    .article .image {
+        background-color: orange;
+        width: 250px;
+        height: 200px;
+        display: block;
+    
+    }
+
+    .aside {
+        background-color: grey;
+        margin: 16px 0;
     }
 }
 
