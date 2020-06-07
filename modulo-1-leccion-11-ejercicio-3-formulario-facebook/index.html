@@ -13,21 +13,21 @@
     <form class="form" method="post" action="/signup">
         <h1 class="form__title">Create an account</h1>
         <h2 class="form__subtitle">It's free and always will be.</h2>
-        <input type="text" placeholder="First Name">    
-        <input type="text" placeholder="Surname">
-        <input class="long" type="text" placeholder="Email or mobile number">
-        <input class="long" type="text" placeholder="Re-enter Email or mobile number">   
-        <input class="long" type="password" placeholder="New password">
+        <input type="text" placeholder="First Name" required>    
+        <input type="text" placeholder="Surname"  required>
+        <input class="long" type="text" placeholder="Email or mobile number"  required>
+        <input class="long" type="text" placeholder="Re-enter Email or mobile number"  required>   
+        <input class="long" type="password" placeholder="New password"  required>
         
         <h3>Birthday</h3>
-        <select id="day" name="day">
+        <select id="day" name="day" required>
             <option value="day">Day</option>
             <option value="1">1</option>
         </select>
-        <select id="month" name="month">            
+        <select id="month" name="month" required>            
             <option value="month">Month</option>
             <option value="january">January</option></select>
-        <select id="year" name="year">
+        <select id="year" name="year" required>
             <option value="year">Year</option>
             <option value="1995">1995</option>
         </select>
@@ -42,12 +42,13 @@
     </label>
 
     <input type="hidden" id="browser" name="browser" value="chrome">
-    <input type="number" min="50" max="250" value="150">
-    <textarea class="form__textarea"></textarea>
+    <input type="number" min="50" max="250" value="150"  required>
+    <textarea class="form__textarea" required></textarea>
 
         <p>By clicking Create an account, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>, indluding our <a href="#">Cookie Use</a>.</p>
 
         <input class="form__button" type="submit" value="create an account">
+        <input class="reset__button" type="reset" value="Reset form">
     </form>
 
 </body>
