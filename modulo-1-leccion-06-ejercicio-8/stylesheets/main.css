@@ -66,6 +66,9 @@
         background-color: grey;
         margin: 16px 0;
     }
+    .main-content {
+        display: flex;
+    }
 }
 
 @media all and (min-width: 1000px) {

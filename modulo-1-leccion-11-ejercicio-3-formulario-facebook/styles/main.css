@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    width: 600px;
+    margin: auto;
+    background-color:skyblue;
+    padding: 10px 20px;
+}
+
+.long {
+    display: block;
+    with: auto;
+}
