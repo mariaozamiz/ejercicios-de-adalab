@@ -44,27 +44,26 @@
 
 // // EJERCICIO 6 - crear una cesta de peras
 
-// let cestaPeras = {
-//     numMaxPeras: 12,
-//     numMinPeras: 2,
-//     numActualPeras: 8,
-//     numInicialPeras: 0,
-//     add: function () {
-//         this.numActualPeras++;
-//     },
-//     rest: function () {
-//         this.numActualPeras--;
-//     },
-//     vaciarCesta: function () {
-//         this.numActualPeras = this.numInicialPeras;
-//     },
-// };
+let cestaPeras = {
+    numMaxPeras: 12,
+    numMinPeras: 2,
+    numActualPeras: 8,
+    numInicialPeras: 0,
+    add: function () {
+        this.numActualPeras++;
+    },
+    rest: function () {
+        this.numActualPeras--;
+    },
+    vaciarCesta: function () {
+        this.numActualPeras = this.numInicialPeras;
+    },
+};
 
-// // console.log(cestaPeras.numActualPeras);
-// cestaPeras.add();
 // console.log(cestaPeras.numActualPeras);
-// cestaPeras.vaciarCesta();
-// console.log(cestaPeras.numActualPeras);
+cestaPeras.add();
+console.log(cestaPeras.numActualPeras);
+cestaPeras.vaciarCesta();
+console.log(cestaPeras.numActualPeras);
 
 // EJERCICIO 7 - estructura de datos para un usuario
-
