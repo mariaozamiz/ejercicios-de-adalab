@@ -77,9 +77,14 @@ const alarmButtons = document.querySelectorAll('.js-button');
 const pageBackground = document.querySelector('body');
 console.log(pageBackground);
 
-function changeBackgroundColor(event) {
+function changeBackgroundColor() {
     pageBackground.classList.toggle('background');
 }
-for (let i = 0; i < alarmButtons.length; i++) {
-    alarmButtons[i].addEventListener('click', changeBackgroundColor);
+
+for (const button of alarmButtons) {
+    button.addEventListener('click', changeBackgroundColor);
 }
+
+// for (let i = 0; i < alarmButtons.length; i++) {
+//     alarmButtons[i].addEventListener('click', changeBackgroundColor);
+// }
