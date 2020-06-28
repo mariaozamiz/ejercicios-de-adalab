@@ -2,30 +2,71 @@
 
 // EJERCICIO 7
 
-const adalabers = [
-    (adalaber1 = {
+let adalabers = [
+    {
         name: 'María',
         age: 29,
         job: 'diseñadora',
-    }),
-    (adalaber2 = {
+    },
+
+    {
         name: 'Lucía',
         age: 31,
         job: 'ingeniera química',
-    }),
-    (adalaber3 = {
+    },
+
+    {
         name: 'Susana',
         age: 34,
         job: 'periodista',
-    }),
-    (adalaber4 = {
+    },
+
+    {
         name: 'Rocío',
         age: 25,
         job: 'actriz',
-    }),
-    (adalaber5 = {
+    },
+
+    {
         name: 'Inmaculada',
         age: 21,
         job: 'diseñadora',
-    }),
+    },
 ];
+
+function countAdalabers() {
+    console.log(adalabers.length);
+}
+function averageAge() {
+    let sumAges = 0;
+    for (let i = 0; i < adalabers.length; i++) {
+        sumAges = sumAges + adalabers[i].age;
+    }
+    let average = sumAges / adalabers.length;
+    return average;
+}
+
+function theYoungest() {
+    let lowestNum = adalabers[0].age;
+    for (let i = 0; i < adalabers.length; i++) {
+        if (adalabers[i].age < lowestNum) {
+            lowestNum = adalabers[i].age;
+        }
+    }
+    return lowestNum;
+}
+
+function designers() {
+    let designerAdalabers = 0;
+    for (let i = 0; i < adalabers.length; i++) {
+        if (adalabers[i].job === 'diseñadora') {
+            designerAdalabers = designerAdalabers + 1;
+        }
+    }
+    return designerAdalabers;
+}
+
+countAdalabers();
+console.log(averageAge());
+console.log(theYoungest());
+console.log(designers());
