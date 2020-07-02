@@ -30,12 +30,11 @@ btn.addEventListener('click', getDogImage);
 const inputField = document.querySelector('.js__input');
 const searchButton = document.querySelector('.js__searchbutton');
 
-function getResults() {
+function getUserResults() {
     let inputValue = inputField.value;
     fetch('https://api.github.com/users/' + inputValue)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
             document.querySelector('.js__username--field').innerHTML =
                 data.name;
             document.querySelector('.js__imgframe--field').src =
@@ -45,6 +44,32 @@ function getResults() {
         });
 }
 
-searchButton.addEventListener('click', getResults);
+searchButton.addEventListener('click', getUserResults);
 
 // EJERCICIO 4 - Listado de repos de una organización en Github
+
+const inputField2 = document.querySelector('.js__input--2');
+const searchButton2 = document.querySelector('.js__searchbutton--2');
+const repoList = document.querySelector('.js__repo-list');
+
+function getOrgResults() {
+    let inputValue2 = inputField2.value;
+    console.log(inputValue2);
+    fetch('https://api.github.com/orgs/' + inputValue2)
+        .then((response2) => response2.json())
+        .then((data2) => {
+            return fetch(
+                'https://api.github.com/orgs/' + inputValue2 + '/repos'
+            )
+                .then((response3) => response3.json())
+                .then((data3) => {
+                    let repoList = document.querySelector('.js__repo-list');
+                    for (const repo of data3) {
+                        let listItem = document.createElement('li');
+                        listItem.innerHTML = repo.name;
+                        repoList.appendChild(listItem);
+                    }
+                });
+        });
+}
+searchButton2.addEventListener('click', getOrgResults);
