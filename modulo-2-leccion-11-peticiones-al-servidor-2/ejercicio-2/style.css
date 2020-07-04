@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SF Distant Galaxy';
+    src: url('https://www.fontspace.com/shyfoundry/sf-distant-galaxy')
+        format('truetype');
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: 'SF Distant Galaxy', Arial, Helvetica, sans-serif;
+}
