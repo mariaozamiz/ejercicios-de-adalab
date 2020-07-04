@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buscador de usuarias de GitHub</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .js__input {
+                margin-bottom: 10px;
+            }
+            .js__searchbutton {
+                margin-bottom: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Buscador de usuarias de GitHub</h1>
+            <input class="js__input" type="text" />
+            <button class="js__searchbutton">Buscar</button>
+            <h2>Resultados</h2>
+            <h3>Nombre</h3>
+            <span class="js__username--field"></span>
+            <h3>Avatar</h3>
+            <img src="" alt="" class="js__imgframe--field" />
+            <h3>Número de repositorios</h3>
+            <span class="js__repositoriesnumber--field"></span>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
