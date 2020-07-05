@@ -7,6 +7,7 @@
         <style>
             * {
                 font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
             }
             .container {
                 display: flex;
@@ -14,16 +15,18 @@
                 align-items: center;
                 justify-content: center;
             }
-            h1 {
-                font-size: 16px;
+
+            .js-dog {
+                margin-bottom: 40px;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>Pinta un número aleatorio traído desde API</h1>
-            <button class="js-button">¡Pulsa!</button>
-            <p class="js-result"></p>
+            <h1>Muestra una raza de perro al azar</h1>
+            <button class="js-dog">¡prueba!</button>
+            <h2 class="js-dogname"></h2>
+            <div class="js-dogimages"></div>
         </div>
         <script type="text/javascript" src="main.js"></script>
     </body>

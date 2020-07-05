@@ -2,7 +2,7 @@
 
 const button = document.querySelector('.js-dog');
 let dogName = document.querySelector('.js-dogname');
-let dogPicture = document.querySelector('.js-dogpicture');
+let dogPictures = document.querySelector('.js-dogimages');
 
 let dogBreeds;
 
@@ -30,12 +30,23 @@ function getRandomNumber(numberOfDogBreeds) {
 function paintDogInfo(randomNumber) {
     const randomBreed = dogBreeds[randomNumber];
     dogName.innerHTML = randomBreed.toUpperCase();
-    fetch(`https://dog.ceo/api/breed/${randomBreed}/images/random`)
-        .then((pictureResponse) => pictureResponse.json())
-        .then((data) => {
-            dogPicture.src = data.message;
-            dogPicture.alt = `${randomBreed}`;
-        });
+
+    const promises = [];
+    for (let i = 0; i < 25; i++) {
+        promises.push(
+            fetch(
+                `https://dog.ceo/api/breed/${randomBreed}/images/random`
+            ).then((response) => response.json())
+        );
+    }
+
+    Promise.all(promises).then((pictureResponses) => {
+        for (const dogphoto of pictureResponses) {
+            let imgElement = document.createElement('img');
+            imgElement.setAttribute('src', dogphoto.message);
+            dogPictures.appendChild(imgElement);
+        }
+    });
 }
 
 button.addEventListener('click', getRandomBreed);
