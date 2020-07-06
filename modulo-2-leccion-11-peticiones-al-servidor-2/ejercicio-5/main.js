@@ -1,20 +1,13 @@
 'use strict';
 
-const radioFields = document.querySelectorAll('.js__theme');
+const radioButtonLight = document.getElementById('light');
+const radioButtonDark = document.getElementById('dark');
 const title = document.querySelector('.js__title');
 const parragraphs = document.querySelectorAll('.js__paragraphs');
 
-function applyTheme(event) {
-    console.log(radioFields.value);
-    if (event.currentTarget === true) {
-        parragraphs.classList.add('light');
-        title.classList.add('light');
-    } else {
-        for (const element of textElements) {
-            console.log(element);
-            textElements.classList.add('dark');
-        }
-    }
+function applyLightTheme() {
+    // if (radioButtonLight.value) {
+    title.classList.add('light');
 }
 
-radioFields.addEventListener('click', applyTheme(event));
+radioButtonLight.addEventListener('change', applyLightTheme());

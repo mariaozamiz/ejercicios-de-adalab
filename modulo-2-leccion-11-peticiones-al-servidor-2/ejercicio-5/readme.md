@@ -9,3 +9,6 @@ Vamos a preparar una página sencilla, con un título, un par de párrafos y un 
 -   Aplicaremos a nuestra página una clase u otra según la selección de la usuaria, apoyándonos en el value del input seleccionado.
 -   Paralelamente cada vez que la usuaria elija un tema, guardaremos esta información en localStorage.
 -   Al cargar la página buscaremos en localStorage el tema seleccionado en la última visita y lo aplicaremos sin que la usuaria tenga que realizar ninguna acción.
+
+Soluciones de Alumnas:
+https://github.com/Adalab/soluciones-alumnas-j/blob/master/MODULO-2/Leccion-11/modulo-2-leccion-11-ejercicio-05-LocalStorage-tema-favorito-elena-mm/main.js
