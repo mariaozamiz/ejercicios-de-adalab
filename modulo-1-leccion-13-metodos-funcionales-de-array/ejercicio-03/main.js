@@ -7,3 +7,13 @@ const users = [
     { name: 'Rocío', isPremium: false },
     { name: 'Inmaculada', isPremium: false },
 ];
+
+const sayWelcome = users.map((user) => {
+    if (user.isPremium === true) {
+        console.log(
+            `Bienvenida ${user.name}. Gracias por confiar en nosotros.`
+        );
+    } else {
+        console.log(`Bienvenida ${user.name}`);
+    }
+});

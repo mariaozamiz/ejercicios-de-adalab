@@ -8,5 +8,5 @@ const users = [
     { name: 'Inmaculada', isPremium: false, pin: 8998 },
 ];
 
-const usersWithAccess = users.pin.filter((user) => users.pin % 2 === 0);
+const usersWithAccess = users.filter((user) => user.pin % 2 === 0);
 console.log(usersWithAccess);

@@ -11,7 +11,3 @@ const users = [
 { name: 'Rocío', isPremium: false },
 { name: 'Inmaculada', isPremium: false }
 ];
-
-## Comentarios
-
-Como el método **map** aplica una función a todos los elementos de un array, creando un nuevo array de resultados, no tendríamos manera de saludar de modo diferente a las usuarias premium. Necesitamos el método **filter**.

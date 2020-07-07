@@ -7,3 +7,8 @@ const runners = [
     { name: 'Cedric Diggory', time: 28 },
     { name: 'Cho Chang', time: 35 },
 ];
+
+const finalWinner = runners.reduce(
+    (winner, runner) => winner.time < runner.time
+);
+console.log(finalWinner);
