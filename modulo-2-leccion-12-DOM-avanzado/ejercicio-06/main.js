@@ -7,9 +7,9 @@ function writeChalkboard() {
         paragraphContainer.innerHTML += 'Hola ke asee';
         let newItem = document.createElement('li');
         newItem.appendChild(newContent);
-        const newContent = document.createTextNode('Item nuevo');
+        const newContent = document.createTextNode('He aprendido bien cómo funcionan los bucles');
         const text = document.createTextNode(
-            'He aprendido bien cómo funcionan los bucles'
+            
         );
         // elementParagraph.appendChild(text);
         // elementParagraph.appendChild(textElement);
