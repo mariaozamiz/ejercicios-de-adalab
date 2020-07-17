@@ -13,11 +13,11 @@ function getFeedInfo() {
         .then((response) => response.json())
         .then((data) => {
             users = data;
-            paintInfo(users);
+            paintInfo();
         });
 }
 
-function paintInfo(users) {
+function paintInfo() {
     const feed = document.querySelector('.js-user-list');
     for (let user of users) {
         //li
