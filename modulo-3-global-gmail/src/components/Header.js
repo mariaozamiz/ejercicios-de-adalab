@@ -8,7 +8,16 @@ class Header extends React.Component {
 
     handleInboxClick(ev) {
         ev.preventDefault();
-        console.log('Me han clicado es', ev.target);
+        console.log('Me han clicado es', ev.currentTarget);
+    }
+    handleTrashClick(ev) {
+        ev.preventDefault();
+        console.log('Me han clicado es', ev.currentTarget);
+    }
+    handleFilterText(ev) {
+        console.log(ev.currentTarget.value);
+        console.log(this.props.changeFilterText);
+        this.props.changeFilterText(ev.currentTarget.value);
     }
 
     render() {
@@ -42,6 +51,7 @@ class Header extends React.Component {
                         className="form__input-text"
                         type="text"
                         placeholder="Buscar un correo"
+                        onChange={this.handleFilterText}
                     />
                 </form>
             </header>
