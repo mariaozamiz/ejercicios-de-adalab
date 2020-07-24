@@ -4,6 +4,10 @@ h2 {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 .App {
     background-color: white;
     width: 300px;
@@ -11,6 +15,9 @@ h2 {
     margin: 50px auto;
     box-shadow: 0 0 10px;
     padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .App-header {
@@ -48,7 +55,7 @@ h2 {
 }
 
 .App-footer {
-    margin-top: 45px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
