@@ -1,7 +1,7 @@
 import React from 'react';
-import heart from './heart-solid.svg';
-import user from './marielle.png';
-import './App.css';
+import heart from '../images/heart-solid.svg';
+import user from '../images/marielle.png';
+import '../stylesheets/App.scss';
 
 function App() {
     const header = (
