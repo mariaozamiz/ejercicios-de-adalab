@@ -13,7 +13,7 @@ const App = () => {
     //email equivale a this.state = {emails: [...]}
     //setEmails equivale a this.setState({emails:[...]});
 
-    console.log(emails);
+    console.log('Emails: ', emails);
 
     const changeFilterText = (text) => {
         setFilterText(text);
@@ -27,12 +27,13 @@ const App = () => {
     };
     const filteredEmails = emails
         .filter((email) => {
-            return email.deleted === false; //filtro por los no borrados
+            return email.deleted !== false; //filtro por los no borrados
         })
         .filter((email) => {
             return email.subject.includes(filterText);
         }); // hacer que filtre por mayusculas y minúsculas
 
+        console.log('Filtrados: ', filteredEmails);
     console.log('Renderizando...');
 
     return (
